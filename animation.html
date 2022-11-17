@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes change-color {
+            0% {
+                color: blue;
+            }
+
+            25% {
+                color: chartreuse;
+            }
+
+            50% {
+                color: cornflowerblue;
+            }
+
+            75% {
+                color: beige;
+            }
+
+            100% {
+                color: coral;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                left: 0px;
+                top: 0px;
+                background-color: blue;
+            }
+
+            25% {
+                left: 300px;
+                top: 0px;
+                border-radius: 0%;
+                background-color: chartreuse;
+            }
+
+            50% {
+                left: 300px;
+                top: 300px;
+                border-radius: 50%;
+                background-color: cornflowerblue;
+            }
+
+            75% {
+                left: 0px;
+                top: 300px;
+                border-radius: 0%;
+                background-color: beige;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+                border-radius: 50%;
+                background-color: coral;
+            }
+        }
+
+        .rectangle {
+            animation: change-color 5s infinite linear;
+            height: 400px;
+            width: 400px;
+            border: 5px solid;
+            margin: auto;
+        }
+
+        body {
+            background-color: black;
+            margin: auto;
+        }
+
+        .circle {
+            animation: rotate 5s infinite linear;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: relative;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rectangle">
+        <div class="circle"></div>
+    </div>
+
+</body>
+
+</html>
